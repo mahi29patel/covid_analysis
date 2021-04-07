@@ -1,6 +1,14 @@
+/*
+colours:
+#faeff8: pinkish white
+#b80f0a
+#a91b0d
+alternate background: https://media.istockphoto.com/vectors/infected-woman-in-a-hospital-vector-id1216231411?k=6&m=1216231411&s=612x612&w=0&h=avxSgApVMEwcGshamXU22VVTOgPqHTxk1sbof6uzAjA=
+*/
+
 html
 {
-    background-color: #ffffff;
+    
     color: #5b6060;
     font-family: 'Lato','Arial',sans-serif;
     font-weight: 300;
@@ -15,26 +23,32 @@ html
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-color:#343a40;
+background-color:#faeff8;
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
 font-family: 'Numans', sans-serif;
 background-size: 100% 60%;
-  background-color: #2f2e2e;
-}
-
-.fa-car
-{
-    font-size: 50px;
-}
-.fa-car:hover
-{
-    color: #ffffff !important;
+  
+    
 }
 .navbar
 {
-    background: #fe8118;
+    background-color: #a91b0d;
+    
+}
+
+.fa-clinic-medical
+{
+    font-size: 50px;
+    color: #fff !important;
+    transition: 0.3s;
+    animation-name: onloadAnim;
+    animation-duration: 1s;
+}
+.fa-clinic-medical:hover
+{
+    color: #000000 !important;
 }
 
 .navbar-nav {
@@ -59,15 +73,19 @@ background-size: 100% 60%;
   text-decoration: none;
   
 }
-
+.nav-link
+{
+    color: #ffffff !important;
+     transition: 0.3s;
+    animation-name: onloadAnim;
+    animation-duration: 1s;
+}
 .nav-link:hover
 {
- color: #ffffff !important;
+ color: #000000 !important;
 
 }
-/*
-
- /* Split the screen in half
+ /* Split the screen in half */
 .split {
   height: 100%;
   width: 50%;
@@ -78,298 +96,72 @@ background-size: 100% 60%;
   padding-top: 20px;
 }
 
-/* Control the left side 
+/* Control the left side */
 .left {
   left: 0;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTckesS8S2-P0myDdNxzg7S6ljubJo57QpeJw&usqp=CAU");
+  background-color: #fff;
 }
 
-/* Control the right side 
+/* Control the right side */
 .right {
   right: 0;
- 
+    background-image: url("https://cdn4.vectorstock.com/i/1000x1000/84/53/hospital-scene-with-sick-patient-in-bed-on-white-vector-30538453.jpg");
+     background-repeat: no-repeat;
+    background-size:cover;
+      background-position: top;
+  background-color: #fff;
 }
 
-/* If you want the content centered horizontally and vertically 
+/* If you want the content centered horizontally and vertically */
 .centered {
   position: absolute;
-  top: 30%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
-/* Style the image inside the centered container, if needed 
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+} 
 
-
-.formDiv {
-    position: absolute;
-    top: 100px;
-    width: 500px;
-   
-}
-.formDiv a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: #ffa467;
-    margin-top: 10px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: 0.3s;
-    animation-name: onloadAnim;
-    animation-duration: 1s;
-}
-.formDiv a:hover {
-    color: #fff;
-}
-.input-group {
-    max-width: 500px;
-    width: 300%;
-    background: #f0f0f0;
-    margin: 20px 0;
-    height: 60px;
-    border-radius: 50px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
-    position: relative;
-    animation-name: onloadAnim;
-    animation-duration: 1s;
-}
-.input-group i {
-    text-align: center;
-    line-height: 50px;
-    color: #acacac;
-    transition: 0.5s;
-    font-size: 15px;
-}
-.input-group input {
-    background: none;
-    outline: none;
-    border: none;
-    line-height: 1;
-    font-weight: 500;
-    font-size: 20px;
-    color: #333;
-    transition: 0.3s;
-}
-.btn {
-    width: 50%;
-    height: 60px;
-    max-width: 350px;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    color: #f26200;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-    margin-top: 15px;
-    animation-name: onloadAnim;
-    animation-duration: 1s;
-    margin-left: 50%;
-}
-.btn i {
-    font-size: 12px;
-    margin-left: 4px;
-}
-.btn:hover {
-    background: none;
-    color: #fff;
-}
-
-.btn1 {
-   border-radius: 50px;
-    width: 40%;
-    height: 60px;
-    font-weight: 600;
-    color:#fff;
-    margin-bottom: 15px;
-    
-    
-    
-}
-
-.btn-primary {
-    background-color: #fe8118 !important;
-    border: 0px;
-    
-}
-
-.btn-outline-primary
-{
-    border: 4px solid #fe8118;
-    transition: 0.3s;
-    animation-name: onloadAnim;
-    animation-duration: 1s;
-}
-/*
-.btn-outline-primary:hover
-{
-    background-color: #fe8118 !important;
-    border: 0px;
-    
-}
-.btn2
-{
-    border-radius: 50px;
-    width: 100%;
-    height: 60px;
-    color: #333;
-    background: #f0f0f0;
-
-}
-
-.btn-secondary
-{
-    text-align: left;
-    padding-left: 80px;
-    color: #6d6a6a;
-
-    
-}
-.btn2:hover, .btn2:active
-{
-    background: #f0f0f0;
-    color: #333;
-}
-
-.dropdown-menu
-{
-    width:100%;
-}
-
-.custom-select
-{
-    background-color: #d8c3c3;
-}
-
-*/
+.col-1
 
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.full-page
-{
-    height: 100%;
-	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/bg-2.jpg);
-	background-position: center;
-	background-size: cover;
-	position: absolute;
+
+    flex-basis: 50%;
+
+    min-width: 300px;
+
 }
 
-.login-form
-{
-    display: none;
-}
 .form-box
+
 {
-    width:380px;
-	height:550px;
-	position:relative;
-	margin:2% auto;
-	background:rgba(0,0,0,0.3);
-	padding:10px;
-    overflow: hidden;
-}
-.button-box
-{
-	width:220px;
-	margin:35px auto;
-	position:relative;
-	box-shadow: 0 0 20px 9px #ff61241f;
-	border-radius: 30px;
-}
-.toggle-btn
-{
-	padding:10px 10px;
-	cursor:pointer;
-	background:transparent;
-	border:0;
-	outline: none;
+
+    width: 900px;
+	height: 600px;
 	position: relative;
-}
-.btn
-{
-	top: 0;
-	left:0;
-	position: absolute;
-	width: 110px;
-	height: 100%;
-	background: #F3C693;
-	border-radius: 30px;
-	transition: .5s;
-}
-.input-group-login
-{
-	top: 150px;
-	position:absolute;
-	width:280px;
-	transition:.5s;
-}
-.input-group-register
-{
-    top: 120px;
-	position:absolute;
-	width:280px;
-	transition:.5s;
-}
-.input-field
-{
-	width: 100%;
-	padding:10px 0;
-	margin:5px 0;
-	border-left:0;
-	border-top:0;
-	border-right:0;
-	border-bottom: 1px solid #999;
-	outline:none;
-	background: transparent;
-}
-.submit-btn
-{
-	width: 85%;
-	padding: 10px 30px;
-	cursor: pointer;
-	display: block;
-	margin: auto;
-	background: #F3C693;
-	border: 0;
-	outline: none;
-	border-radius: 30px;
-}
-.check-box
-{
-	margin: 30px 10px 34px 0;
-}
-span
-{
-	color:#777;
-	font-size:12px;
-	bottom:68px;
-	position:absolute;
-}
-.login
-{
-	left:50px;
-}
-.login input
-{
-	color:white;
-	font-size:15;
-}
-.register
-{
-	left:450px;
-}
-.register input
-{
-	color:white;
-	font-size: 15;
-}
+    top: 50px;
+    left: 2px;
+	background: rgba(169, 27, 13, 0.71);
+    /*box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);*/
+    border-radius: 20px;
 
 
+}
+.p1 {
+    padding-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
