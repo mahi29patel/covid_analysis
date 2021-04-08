@@ -85,6 +85,24 @@ background-size: 100% 60%;
  color: #000000 !important;
 
 }
+.box
+{
+    height: 50px;
+    width: 110px;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.3s;
+    animation-name: onloadAnim;
+    animation-duration: 1s;
+   /* margin-top: 1px;
+    padding-top: 2px;*/
+   
+}
+.box:hover
+{
+    background: #ffffff;
+    box-shadow:0 12.5px 10px rgba(0, 0, 0, 0.06);
+}
  /* Split the screen in half */
 .split {
   height: 100%;
