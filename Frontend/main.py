@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from flask_login import login_user, logout_user, login_required
 
 app=Flask(__name__)
 
@@ -59,6 +60,15 @@ def submit():
             db.session.commit()
             return render_template("list.html")
 
+@app.route('/login', methods=['POST'])
+def log():
+    email = request.form.get('email')
+    psd = request.form.get('psd')
+    user = Signupd.query.filter_by(email=email, psd=psd).first()
+    if not user:
+        return render_template("signup.html")
+    
+    return render_template("list.html")
 
 if __name__=='__main__':
     app.run(debug=True)
