@@ -16,15 +16,31 @@
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/style2.css">
     <title>list page</title>
-      
-
-
+    
   </head>
   
   <body id="list-page">
-      <p>HELLO YOU ARE LOGGED IN SUCCESSFULLY</p>
+    <table class="table">
+      <tr class="table__header">
+        {% for header in headings %}
+        <th class="table__cell">
+          {{ header }}
+        </th>
+        {% endfor %}
+      </tr>
+      {% for row in data %}
+      <tr class="table__row">
+        {% for cell in row %}
+        <td class="table__cell">
+          {{ cell }}
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://kit.fontawesome.com/4077c6ef6a.js" crossorigin="anonymous"></script>

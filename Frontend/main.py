@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import login_user, logout_user, login_required
+import csv
+import numpy as np
 
 app=Flask(__name__)
 
@@ -16,7 +18,7 @@ else:
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
+#----------------------------------------------------------------------------#
 class Signupd(db.Model):
     __tablename__ = 'signup'
     email = db.Column(db.String(50), primary_key=True)
@@ -31,7 +33,7 @@ class Signupd(db.Model):
         self.psd = psd
         self.cpsd = cpsd
 
-
+#----------------------------------------------------------------------------#
 
 @app.route('/')
 def index():
@@ -39,13 +41,30 @@ def index():
 @app.route('/login.html')
 def login():
     return render_template("login.html")
+
 @app.route('/signup.html')
 def signup():
     return render_template("signup.html")
 
-@app.route('/submit', methods=['POST'])
+#-------------------------------LOADING DATA---------------------------------------------#
+headings= ("Srno", "Name", "Room no.", "Doctor name", "Date of admit")
+
+with open(r"C:\Users\mahii\Documents\GitHub\covid_analysis\Frontend\hospital_data.csv") as f:
+    l = list(csv.reader(f, delimiter=","))
+
+data = np.array(l[0:])
+@app.route('/list.html')
+def table():
+    return render_template("list.html", headings=headings, data=data)
+
+
+
+
+#------------------------------------SIGN UP----------------------------------------#
+
+@app.route('/login.html', methods=['GET'])
 def submit():
-    if request.method == 'POST':
+    if request.method == 'GET':
         email = request.form['email']
         hname = request.form['hname']
         psd = request.form['psd']
@@ -60,7 +79,9 @@ def submit():
             db.session.commit()
             return render_template("list.html")
 
-@app.route('/login', methods=['POST'])
+#-----------------------------------LOGIN-----------------------------------------#
+
+@app.route('/list.html', methods=['GET'])
 def log():
     email = request.form.get('email')
     psd = request.form.get('psd')
@@ -69,6 +90,10 @@ def log():
         return render_template("signup.html")
     
     return render_template("list.html")
+
+
+
+
 
 if __name__=='__main__':
     app.run(debug=True)
