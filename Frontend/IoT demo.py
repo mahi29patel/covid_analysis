@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-df = pd.read_csv(r'C:\Users\margi\Downloads\patients_data.csv')
+df = pd.read_csv('Frontend\patients_data.csv')
 
 #print(df.tail())
 
