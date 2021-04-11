@@ -57,14 +57,11 @@ data = np.array(l[0:])
 def table():
     return render_template("list.html", headings=headings, data=data)
 
-
-
-
 #------------------------------------SIGN UP----------------------------------------#
 
-@app.route('/login.html', methods=['GET'])
+@app.route('/login.html', methods=['POST'])
 def submit():
-    if request.method == 'GET':
+    if request.method == 'POST':
         email = request.form['email']
         hname = request.form['hname']
         psd = request.form['psd']
@@ -77,22 +74,19 @@ def submit():
             data = Signupd(email, hname, psd, cpsd)
             db.session.add(data)
             db.session.commit()
-            return render_template("list.html")
+            return render_template("login.html")
 
 #-----------------------------------LOGIN-----------------------------------------#
 
-@app.route('/list.html', methods=['GET'])
+@app.route('/login', methods=['POST'])
 def log():
     email = request.form.get('email')
     psd = request.form.get('psd')
     user = Signupd.query.filter_by(email=email, psd=psd).first()
     if not user:
         return render_template("signup.html")
-    
-    return render_template("list.html")
-
-
-
+    else:
+        return render_template("list.html", headings=headings, data=data)
 
 
 if __name__=='__main__':
