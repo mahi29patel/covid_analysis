@@ -49,7 +49,7 @@ def signup():
 #-------------------------------LOADING DATA---------------------------------------------#
 headings= ("Srno", "Name", "Room no.", "Doctor name", "Date of admit")
 
-with open(r"C:\Users\mahii\Documents\GitHub\covid_analysis\Frontend\hospital_data.csv") as f:
+with open('Frontend\hospital_data.csv') as f:
     l = list(csv.reader(f, delimiter=","))
 
 data = np.array(l[0:])
