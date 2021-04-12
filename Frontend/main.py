@@ -38,6 +38,7 @@ class Signupd(db.Model):
 @app.route('/')
 def index():
     return render_template("index.html")
+  
 @app.route('/login.html')
 def login():
     return render_template("login.html")
@@ -47,12 +48,12 @@ def signup():
     return render_template("signup.html")
 
 #-------------------------------LOADING DATA---------------------------------------------#
-headings= ("Srno", "Name", "Room no.", "Doctor name", "Date of admit")
+headings= ("Name", "Room no.", "Doctor name", "Date of admit", "Severity")
 
 with open('Frontend\hospital_data.csv') as f:
     l = list(csv.reader(f, delimiter=","))
 
-data = np.array(l[0:])
+data = np.array(l[1:])
 @app.route('/list.html')
 def table():
     return render_template("list.html", headings=headings, data=data)
