@@ -47,6 +47,10 @@ def login():
 def signup():
     return render_template("signup.html")
 
+@app.route('/sensor.html')
+def sensor():
+    return render_template("sensor.html")
+
 #-------------------------------LOADING DATA---------------------------------------------#
 headings= ("Name", "Room no.", "Doctor name", "Date of admit", "Severity")
 
@@ -88,6 +92,14 @@ def log():
         return render_template("signup.html")
     else:
         return render_template("list.html", headings=headings, data=data)
+
+
+
+@app.route('/sensor',methods = ['POST', 'GET'])
+def result():
+   result = request.form.get('patient')
+   print(result)
+   return render_template("sensor.html")   
 
 
 if __name__=='__main__':
