@@ -154,3 +154,35 @@ a:hover {
 a:active {
   color: black;
 } 
+
+/************************SENSOR PAGE******************************/
+h3
+{
+  color:#fff;
+  text-align:center;
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 2px black;
+}
+.button_slide {
+  color: rgb(0, 0, 0);
+  border: 5px solid #a91b0d;
+  margin-left: 38%;
+  margin-bottom: 40px;
+  background: none;
+  border-radius: 10px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 600px 0 0 0 #a91b0d;
+}

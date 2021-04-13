@@ -2,8 +2,6 @@
 import pandas as pd
 
 df1 = pd.read_csv('Frontend\hospital_data.csv')
-  
-
 df = pd.read_csv('Frontend\patients_data.csv')
 
 
