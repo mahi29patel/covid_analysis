@@ -90,7 +90,7 @@
                 }                       
 	
             function TableRowClick(therow) {
-                let msg = therow.cells[0].innerHTML+'*'+therow.cells[1].innerHTML+'*'+therow.cells[2].innerHTML+'*'+therow.cells[3].innerHTML+'*'+therow.cells[4].innerHTML;
+                let msg = therow.cells[0].innerHTML;
                 //alert(msg);
                 localStorage.setItem("textvalue",msg);
                 return false;

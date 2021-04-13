@@ -3,6 +3,14 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import login_user, logout_user, login_required
 import csv
 import numpy as np
+import string
+import re
+import pandas as pd
+
+# Python3 code to remove whitespace
+def remove(string):
+    return string.replace(" ", "")
+      
 
 app=Flask(__name__)
 
@@ -52,7 +60,7 @@ def sensor():
     return render_template("sensor.html")
 
 #-------------------------------LOADING DATA---------------------------------------------#
-headings= ("Name", "Room no.", "Doctor name", "Date of admit", "Severity")
+headings= ("Patient ID","Name", "Room no.", "Doctor name", "Date of admit", "Severity")
 
 with open('Frontend\hospital_data.csv') as f:
     l = list(csv.reader(f, delimiter=","))
@@ -98,8 +106,13 @@ def log():
 @app.route('/sensor',methods = ['POST', 'GET'])
 def result():
    result = request.form.get('patient')
-   print(result)
-   return render_template("sensor.html")   
+   print(remove(result))
+   res1= int(re.sub('\D', '', result))
+   print(res1)
+   df = pd.read_csv('Frontend\patients_data.csv')
+   headings1= ("Patient ID","Age", "SpO2", "Temperature", "HeartRate", "RespiratoryRate")
+   data1=df.loc[df['PatientID'] == res1].to_numpy()
+   return render_template("sensor.html", headings=headings1, data=data1)
 
 
 if __name__=='__main__':
