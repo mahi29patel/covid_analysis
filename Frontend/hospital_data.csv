@@ -1,51 +1,51 @@
 PatientID,Name,RoomNo,DoctorName,DateOfAdmit,Severity
-34,Kamini Malik,105,Preet Bhatt,10-03-2021,Extremely Severe
-7,Ishant Raizada,110,Charlie Rana,19-03-2021,Extremely Severe
-46,Devanshi Patel,119,Narendra Wadhwa,11-01-2021,Extremely Severe
-13,Jenish Patel,111,Ramesh Kohli,24-01-2021,Extremely Severe
-15,Shreyas Mishra,109,Kiyan Patel,21-03-2021,Extremely Severe
-47,Heer Butala,119,Monisha Khatri,02-03-2021,Extremely Severe
-18,Namrata Singh,118,Singh Om,16-01-2021,Extremely Severe
-17,Arsh Hirani,111,Vikram Ramakrishnan,12-01-2021,Extremely Severe
-11,Ishant Sampat,105,Gautam Nanda,09-03-2021,Extremely Severe
-30,Aman Manvar,108,Kanak Rana,15-03-2021,Extremely Severe
-12,Susan Wadhwa,117,Lina Jain,04-01-2021,Extremely Severe
-37,Heer Sharma,101,Shyam Kapadiya,07-01-2021,Extremely Severe
-27,Mansi Mohammed,119,Sunil Sharma,22-01-2021,Extremely Severe
-48,Heli Patel,120,Ram Patel,18-01-2021,Extremely Severe
-25,Karan Shukla,108,Kishan Patel,26-01-2021,Extremely Severe
+1,Jagdish Lamba,102,Kamya Lohiya,01-03-2021,Extremely Severe
+22,Reyna Mehta,108,Devisha Varma,13-03-2021,Extremely Severe
+42,Nilima Wadhwa,118,Laila Anand,07-03-2021,Extremely Severe
 19,Rishi Siyani,113,Brij Mehta,17-01-2021,Extremely Severe
-16,Anjali Iyer,120,Osman Raghavan,10-01-2021,Extremely Severe
-23,Astha Sharma,118,Preet Malik,14-01-2021,Extremely Severe
-33,Zeel Sharma,109,Suresh Nihal,27-01-2021,Extremely Severe
-26,Kiran Gokhale,102,Rashi Basu,11-03-2021,Extremely Severe
-50,Vikram Patel,111,Santosh Ghosal,28-01-2021,Extremely Severe
-6,Roshni Sharma,120,Rohit Iyer,18-03-2021,Extremely Severe
-32,Shreya Nihal,119,Aum Lamba,01-01-2021,Extremely Severe
-35,Vicky Darbar,118,Disha Jha,05-01-2021,Extremely Severe
-31,Janvi Patel,106,Mahendra Sharma,22-03-2021,Extremely Severe
-36,Ram Patel,110,Krina Joshi,06-01-2021,Extremely Severe
-9,Shanti Dua,117,Monali Hirani,05-03-2021,Extremely Severe
+25,Karan Shukla,108,Kishan Patel,26-01-2021,Extremely Severe
 10,Ambar Kohli,115,Viyan Singh,20-03-2021,Extremely Severe
+11,Ishant Sampat,105,Gautam Nanda,09-03-2021,Extremely Severe
+28,Malvika Sharma,117,Hansal Hiranandani,20-01-2021,Extremely Severe
+36,Ram Patel,110,Krina Joshi,06-01-2021,Extremely Severe
+50,Vikram Patel,111,Santosh Ghosal,28-01-2021,Extremely Severe
+41,Nikita Mutti,117,Brinda Agarwal,03-03-2021,Extremely Severe
+2,Yadu Raghavan,109,Ahana Ahuja,06-03-2021,Extremely Severe
+32,Shreya Nihal,119,Aum Lamba,01-01-2021,Extremely Severe
+48,Heli Patel,120,Ram Patel,18-01-2021,Extremely Severe
+21,Kevin Jain,117,Karnesh Raizada,23-01-2021,Extremely Severe
+15,Shreyas Mishra,109,Kiyan Patel,21-03-2021,Extremely Severe
+6,Roshni Sharma,120,Rohit Iyer,18-03-2021,Extremely Severe
+7,Ishant Raizada,110,Charlie Rana,19-03-2021,Extremely Severe
+3,Ibrahim Ramakrishnan,101,Zack Arya,08-03-2021,Extremely Severe
+5,Diya Patel,111,Faisal Kohli,17-03-2021,Extremely Severe
+35,Vicky Darbar,118,Disha Jha,05-01-2021,Extremely Severe
+47,Heer Butala,119,Monisha Khatri,02-03-2021,Extremely Severe
+16,Anjali Iyer,120,Osman Raghavan,10-01-2021,Extremely Severe
 40,Ram Om,102,Rama Bedi,12-03-2021,Extremely Severe
-29,Lavanya Patil,119,Shyam Dua,09-01-2021,Moderately Severe
-2,Yadu Raghavan,109,Ahana Ahuja,06-03-2021,Moderately Severe
+17,Arsh Hirani,111,Vikram Ramakrishnan,12-01-2021,Extremely Severe
+20,Lara Chauhan,113,Kishan Patel,21-01-2021,Extremely Severe
+18,Namrata Singh,118,Singh Om,16-01-2021,Extremely Severe
+39,Charmi Patel,118,Varun Dalal,14-03-2021,Extremely Severe
+29,Lavanya Patil,119,Shyam Dua,09-01-2021,Extremely Severe
+30,Aman Manvar,108,Kanak Rana,15-03-2021,Extremely Severe
+8,Bhanupriya Deol,112,Terence Reddy,04-03-2021,Extremely Severe
+14,Loy Sheth,115,Haresh Mishra,25-01-2021,Extremely Severe
+43,Palak Javya,105,Singh Deol,08-01-2021,Extremely Severe
+46,Devanshi Patel,119,Narendra Wadhwa,11-01-2021,Extremely Severe
+27,Mansi Mohammed,119,Sunil Sharma,22-01-2021,Extremely Severe
+49,Sid Patil,112,Hari Manvar,19-01-2021,Moderately Severe
 4,Tirth Patel,111,Jiya Chaddha,03-01-2021,Moderately Severe
-41,Nikita Mutti,117,Brinda Agarwal,03-03-2021,Moderately Severe
-42,Nilima Wadhwa,118,Laila Anand,07-03-2021,Moderately Severe
-43,Palak Javya,105,Singh Deol,08-01-2021,Moderately Severe
-45,Marmik Verma,115,Ram Sampat,13-01-2021,Moderately Severe
-44,Dev Hiranandani,116,Gautami Bhatt,16-03-2021,Moderately Severe
-3,Ibrahim Ramakrishnan,101,Zack Arya,08-03-2021,Moderately Severe
-28,Malvika Sharma,117,Hansal Hiranandani,20-01-2021,Moderately Severe
-5,Diya Patel,111,Faisal Kohli,17-03-2021,Moderately Severe
-1,Jagdish Lamba,102,Kamya Lohiya,01-03-2021,Moderately Severe
-39,Charmi Patel,118,Varun Dalal,14-03-2021,Normal
-8,Bhanupriya Deol,112,Terence Reddy,04-03-2021,Normal
-14,Loy Sheth,115,Haresh Mishra,25-01-2021,Normal
+23,Astha Sharma,118,Preet Malik,14-01-2021,Moderately Severe
+33,Zeel Sharma,109,Suresh Nihal,27-01-2021,Moderately Severe
+38,Harin Shekhawat,109,Hari Gokhale,15-01-2021,Moderately Severe
+37,Heer Sharma,101,Shyam Kapadiya,07-01-2021,Moderately Severe
+12,Susan Wadhwa,117,Lina Jain,04-01-2021,Normal
+45,Marmik Verma,115,Ram Sampat,13-01-2021,Normal
 24,Jayesh Ghosal,104,Anil Lal,02-01-2021,Normal
-38,Harin Shekhawat,109,Hari Gokhale,15-01-2021,Normal
-22,Reyna Mehta,108,Devisha Varma,13-03-2021,Normal
-20,Lara Chauhan,113,Kishan Patel,21-01-2021,Normal
-49,Sid Patil,112,Hari Manvar,19-01-2021,Normal
-21,Kevin Jain,117,Karnesh Raizada,23-01-2021,Normal
+44,Dev Hiranandani,116,Gautami Bhatt,16-03-2021,Normal
+26,Kiran Gokhale,102,Rashi Basu,11-03-2021,Normal
+13,Jenish Patel,111,Ramesh Kohli,24-01-2021,Normal
+31,Janvi Patel,106,Mahendra Sharma,22-03-2021,Normal
+9,Shanti Dua,117,Monali Hirani,05-03-2021,Normal
+34,Kamini Malik,105,Preet Bhatt,10-03-2021,Normal

@@ -111,9 +111,10 @@ def result():
    print(remove(result))
    res1= int(re.sub('\D', '', result))
    print(res1)
-   df = pd.read_csv('Frontend\patients_data.csv')
+   
    headings1= ("Patient ID","Age", "SpO2", "Temperature", "HeartRate", "RespiratoryRate")
-   data1=df.loc[df['PatientID'] == res1].to_numpy()
+   df2 = pd.read_csv('Frontend\patients_data.csv')
+   data1=df2.loc[df2['PatientID'] == res1].to_numpy()
    return render_template("sensor.html", headings=headings1, data=data1)
 
 if __name__=='__main__':
@@ -123,6 +124,9 @@ if __name__=='__main__':
 var = 1
 while var == 1 :
     df1 = pd.read_csv('Frontend\hospital_data.csv')
+    df1 = df1.sort_values(by = 'PatientID')
+    #print(df1.head())
+    #print("Mahi")
     df = pd.read_csv('Frontend\patients_data.csv')
     #print(df.head())
 
@@ -130,14 +134,13 @@ while var == 1 :
     #print(length)
 
     for i in range(length):
-
         df.loc[i, 'SpO2']=float(random.randrange(800, 1000))/10
         df.loc[i, 'Temperature']=float(random.randrange(9900, 10500))/100
         df.loc[i, 'HeartRate']=random.randint(70,110)
         df.loc[i, 'RespiratoryRate']=random.randint(14,30)
 
 
-    #print(df.head())
+    print(df.head())
 
 
     for i in range (length):
@@ -168,13 +171,18 @@ while var == 1 :
         df1.loc[i, 'Severity'] = s
         df1 = df1.sort_values(by = 'Severity')
         df1.to_csv('Frontend\hospital_data.csv', index=False)
+        df.to_csv('Frontend\patients_data.csv', index=False)
 
     #df1.to_csv('Frontend\hosp_data.csv', index=False)
     with open('Frontend\hospital_data.csv') as f:
         l = list(csv.reader(f, delimiter=","))
 
     data = np.array(l[1:])
-    print(df1.head())
+
+    df2 = pd.read_csv('Frontend\patients_data.csv')
+    #print(df1)
+    #print(df2)
+    
     time.sleep(30)
 
    
