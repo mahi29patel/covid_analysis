@@ -136,7 +136,7 @@ while var == 1 :
     for i in range(length):
         df.loc[i, 'SpO2']=float(random.randrange(800, 1000))/10
         df.loc[i, 'Temperature']=float(random.randrange(9900, 10500))/100
-        df.loc[i, 'HeartRate']=random.randint(70,110)
+        df.loc[i, 'HeartRate']=random.randint(70,120)
         df.loc[i, 'RespiratoryRate']=random.randint(14,30)
 
 
