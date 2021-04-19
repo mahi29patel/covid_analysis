@@ -125,10 +125,10 @@ var = 1
 while var == 1 :
     df1 = pd.read_csv('Frontend\hospital_data.csv')
     df1 = df1.sort_values(by = 'PatientID')
-    #print(df1.head())
+    print(df1.head())
     #print("Mahi")
     df = pd.read_csv('Frontend\patients_data.csv')
-    #print(df.head())
+    print(df.head())
 
     length= len(df.index)
     #print(length)
@@ -168,12 +168,17 @@ while var == 1 :
         else:
             s= 'Normal'
 
+        #print(df.loc[[i]],s)
+        #print("\n")
         df1.loc[i, 'Severity'] = s
-        df1 = df1.sort_values(by = 'Severity')
+        #print(df1.loc[[i]])
+        #print(df.loc[[i]], df1.loc[[i]],s)
+        #df1 = df1.sort_values(by = 'Severity')
         df1.to_csv('Frontend\hospital_data.csv', index=False)
         df.to_csv('Frontend\patients_data.csv', index=False)
 
     #df1.to_csv('Frontend\hosp_data.csv', index=False)
+    
     with open('Frontend\hospital_data.csv') as f:
         l = list(csv.reader(f, delimiter=","))
 
@@ -183,6 +188,6 @@ while var == 1 :
     #print(df1)
     #print(df2)
     
-    time.sleep(30)
+    time.sleep(200)
 
    
